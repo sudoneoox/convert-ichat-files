@@ -6,14 +6,8 @@
 //  Copyright © 2018 Amethyst Software (contact@amethystsoftware.com). All rights reserved.
 //
 
-#include <locale.h>  // setlocale()
-#include <stdbool.h> // bool
-#include <stdio.h>   // fprintf()
-#include <stdlib.h>  // malloc()
-#include <string.h>  // strcpy()
-#include "bplistReader.h"
-#include "FileIO.h"
 #include "ichatReader.h"
+
 
 #pragma mark Globals
 const int kVersion_ichat = 100000; // only known version of iChat log format

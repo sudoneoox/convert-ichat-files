@@ -8,6 +8,14 @@
 
 #ifndef ichatReader_h
 #define ichatReader_h
+#include <locale.h>  // setlocale()
+#include <stdbool.h> // bool
+#include <stdio.h>   // fprintf()
+#include <stdlib.h>  // malloc()
+#include <string.h>  // strcpy()
+#include "bplistReader.h"
+#include "FileIO.h"
+#include <stdint.h>
 
 typedef struct ICMessage
 {

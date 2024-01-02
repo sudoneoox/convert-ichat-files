@@ -6,15 +6,10 @@
 //  Copyright © 2017 Amethyst Software (contact@amethystsoftware.com). All rights reserved.
 //
 
-#include <errno.h>   // errno
-#include <stdbool.h> // bool
-#include <stdio.h>   // fprintf()
-#include <stdlib.h>  // malloc()
-#include <string.h>  // strerror()
 #include "FileIO.h"
 
 #define FILE_SIZE_MAX_MB 5
-#define FILE_SIZE_MAX    (FILE_SIZE_MAX_MB * 1024 * 1024)
+#define FILE_SIZE_MAX   ( (FILE_SIZE_MAX_MB * 1024 * 1024))
 
 char  *gInFileContents = NULL;
 size_t gInFileLength = 0;

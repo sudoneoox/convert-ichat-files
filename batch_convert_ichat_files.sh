@@ -16,5 +16,5 @@ do
    #"./Build/Convert ichat Files" -mode convert -input "$THE_FILE" -format RTF --trim-email-ids --overwrite
    #"./Build/Convert ichat Files" -mode convert -input "$THE_FILE" -format RTF --overwrite
    #"./Build/Convert ichat Files" -mode convert -input "$THE_FILE" -format RTF --real-names
-   "./Build/Convert ichat Files" -mode convert -input "$THE_FILE" -format TXT --real-names --overwrite
+   "./Build/convert_ichat" -mode convert -input "$THE_FILE" -format TXT --real-names --overwrite
 done

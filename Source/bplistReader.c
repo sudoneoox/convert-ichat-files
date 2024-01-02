@@ -6,12 +6,6 @@
 //  Copyright © 2017 Amethyst Software (contact@amethystsoftware.com). All rights reserved.
 //
 
-#include <locale.h>  // setlocale()
-#include <math.h>    // pow()
-#include <stdbool.h> // bool
-#include <stdio.h>   // fprintf()
-#include <stdlib.h>  // malloc()
-#include <string.h>  // strcpy()
 #include "bplistReader.h"
 
 #pragma mark Globals
@@ -896,7 +890,7 @@ void PrintWideString(char *strPtr, uint64_t strSize)
     {
         int widechar = (strPtr[a] << 8) + strPtr[a + 1];
         setlocale(LC_ALL, "");
-        printf("%lc", (wint_t)widechar); // does not produce proper output in Xcode's console, but does in macOS' Terminal
+        printf("%lc", (uint8_t)widechar); // does not produce proper output in Xcode's console, but does in macOS' Terminal
     }
     printf("\n");
 }

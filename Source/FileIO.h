@@ -9,6 +9,13 @@
 #ifndef FileIO_h
 #define FileIO_h
 
+#include <errno.h>   // errno
+#include <stdbool.h> // bool
+#include <stdio.h>   // fprintf()
+#include <stdlib.h>  // malloc()
+#include <string.h>  // strerror()
+#include <stdint.h>
+
 // Allows us to build a table of possible errors that C file I/O functions might return
 typedef struct FileError
 {

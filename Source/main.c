@@ -6,10 +6,6 @@
 //  Copyright © 2016 Amethyst Software (contact@amethystsoftware.com). All rights reserved.
 //
 
-#include <stdbool.h> // bool
-#include <stdio.h>   // fprintf()
-#include <stdlib.h>  // malloc()
-#include <string.h>  // strcpy()
 #include "FileIO.h"
 #include "bplistReader.h"
 #include "ichatReader.h"

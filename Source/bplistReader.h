@@ -10,6 +10,15 @@
 #define bplistReader_h
 
 #define LOCAL_TIME_ZONE  -5
+#include <stdint.h>
+#include <math.h>
+#include <locale.h>  // setlocale()
+#include <math.h>    // pow()
+#include <stdbool.h> // bool
+#include <stdio.h>   // fprintf()
+#include <stdlib.h>  // malloc()
+#include <string.h>  // strcpy()
+
 
 // Possible types of data, as specified by the object's code byte; see Apple's CFBinaryPList.c for original bplist format breakdown
 enum BPObjectTypeCode
